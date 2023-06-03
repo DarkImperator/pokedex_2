@@ -1,6 +1,9 @@
 import './App.css';
 import PokemonCard from './components/PokemonCard';
+<<<<<<< Updated upstream
 import NavBar from './components/NavBar';
+=======
+>>>>>>> Stashed changes
 import { useState } from 'react';
 
 const pokemonList = [
@@ -31,11 +34,22 @@ const pokemonList = [
 
 function App() {
   const [pokemonIndex, setPokemonIndex] = useState(0);
+<<<<<<< Updated upstream
   
   return (
     <>
       <PokemonCard pokemon={pokemonList[pokemonIndex]}/>
       <NavBar /*pokemonIndex={pokemonIndex} setPokemonIndex={setPokemonIndex} pokemonList={pokemonList}*//>
+=======
+  const handleClickP = () => (pokemonIndex > 0) ? setPokemonIndex(pokemonIndex - 1) : null;
+  const handleClickS = () => (pokemonIndex < pokemonList.length - 1) ? (setPokemonIndex(pokemonIndex + 1)) : null;
+
+  return (
+    <>
+      <PokemonCard pokemon={pokemonList[pokemonIndex]}/>
+      <button onClick={handleClickP}>Precedent</button>
+      <button onClick={handleClickS}>Suivant</button>
+>>>>>>> Stashed changes
     </>
   );
 }

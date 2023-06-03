@@ -1,5 +1,9 @@
 div {
+<<<<<<< Updated upstream
     background-color: purple;
+=======
+    background-color: rgba(255, 0, 0, 0.75);
+>>>>>>> Stashed changes
 }
 
 figcaption {
