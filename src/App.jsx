@@ -1,14 +1,13 @@
 import './App.css'
+import Mytitle from './components/MyTitle';
 
 function App() {
   
   return (
     <>
-      <p>
-        pd pourri pute couille juice dick
-      </p>
+      <Mytitle/>
     </>
-  )
+  );
 }
 
 export default App
